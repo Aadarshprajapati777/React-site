@@ -1,6 +1,6 @@
-import ExpenseItem from "./components/ExpenseItem";
-import ExpenseList from "./components/ExpenseList";
-import './components/ExpenseList.css';
+
+import ExpenseList from "./components/Expenses/ExpenseList";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <h1>React site</h1>
+      <NewExpense/>
       <div className="expenses">
         <ExpenseList expenses={expenses} ></ExpenseList>
       </div>
